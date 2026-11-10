@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jorge Paez · Portafolio QA</title>
+  <meta name="description" content="Portafolio de Jorge Alberto Paez Vargas, tester QA: casos de prueba, listas de comprobación, reportes de errores y SQL.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Principal">
+      <a class="logo" href="#inicio">JP<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ INICIO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Tester QA</p>
+          <h1>Hola, soy <span class="accent">Jorge Alberto Paez Vargas</span></h1>
+          <p class="lead">
+            Encuentro errores antes de que lleguen a los usuarios. Diseño casos de prueba,
+            listas de comprobación y reportes de errores claros para que el equipo pueda corregirlos rápido.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+            <!-- CAMBIA: pon aquí tu usuario público de GitHub -->
+            <a class="btn btn-ghost" href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Cifras destacadas: edítalas cuando agregues proyectos -->
+        <ul class="hero-stats" aria-label="Resumen">
+          <li><strong>5</strong><span>proyectos</span></li>
+          <li><strong>97</strong><span>casos de prueba</span></li>
+          <li><strong>20</strong><span>errores documentados</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="section" id="sobre-mi">
+      <div class="container narrow">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy tester QA y me gusta que el software haga lo que promete. Estos proyectos los
+          desarrollé durante mi formación en pruebas de software, trabajando por sprints sobre
+          aplicaciones reales de práctica: un mapa de rutas y una app de pedidos de comida.
+        </p>
+        <p>
+          Trabajo con requisitos, diseño pruebas con clases de equivalencia y valores límite,
+          registro los errores en Jira y consulto bases de datos con SQL.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section class="section section-alt" id="proyectos">
+      <div class="container">
+        <h2>Proyectos</h2>
+        <p class="section-intro">Cada tarjeta enlaza al documento original con el detalle completo.</p>
+
+        <div class="grid">
+
+          <!-- Proyecto 1 -->
+          <article class="card">
+            <div class="card-top"><span class="badge">Sprint 1</span><span class="kind">Casos de prueba</span></div>
+            <h3>Urban Routes</h3>
+            <p>Pruebas de la aplicación de mapas: navegación, zoom, campos «Desde» y «Hasta», modos de mapa, Street View y pantalla completa.</p>
+            <div class="results">
+              <div class="bar" role="img" aria-label="15 aprobados y 9 fallidos">
+                <span class="pass" style="width:62.5%"></span>
+                <span class="fail" style="width:37.5%"></span>
+              </div>
+              <p class="legend"><b class="ok">15</b> aprobados · <b class="bad">9</b> fallidos · 24 casos</p>
+            </div>
+            <ul class="tags"><li>Casos de prueba</li><li>Reporte de errores</li><li>Google Sheets</li></ul>
+            <a class="link" href="https://docs.google.com/spreadsheets/d/1sLRvy3dUwOp4ilR4d6EDycaOm_WQMZJ_/edit?usp=sharing" target="_blank" rel="noopener">Ver documento →</a>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="card">
+            <div class="card-top"><span class="badge">Sprint 3</span><span class="kind">Reportes de errores</span></div>
+            <h3>Informes de errores en Jira</h3>
+            <p>Reportes de errores redactados con título claro, pasos para reproducir, resultado esperado y real, y tabla de tareas de seguimiento.</p>
+            <p class="metric"><b>Jira</b> · incidencias BUGREP0</p>
+            <ul class="tags"><li>Jira</li><li>Informes de errores</li><li>Google Docs</li></ul>
+            <a class="link" href="https://docs.google.com/document/d/1lQ-t87LBUbAWk61Dyj-m_Hqqe3mdG1z0/edit?usp=sharing" target="_blank" rel="noopener">Ver documento →</a>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="card">
+            <div class="card-top"><span class="badge">Sprint 6</span><span class="kind">Lista de comprobación</span></div>
+            <h3>Urban.Lunch</h3>
+            <p>Lista de comprobación y resultados para una app móvil de pedidos de comida: punto de recogida, platillos, confirmación, seguimiento y entrega.</p>
+            <div class="results">
+              <div class="bar" role="img" aria-label="59 aprobados y 12 fallidos">
+                <span class="pass" style="width:80.8%"></span>
+                <span class="fail" style="width:16.4%"></span>
+              </div>
+              <p class="legend"><b class="ok">59</b> aprobados · <b class="bad">12</b> fallidos · 73 casos · 11 incidencias en Jira</p>
+            </div>
+            <ul class="tags"><li>Pruebas móviles</li><li>Jira</li><li>Google Sheets</li></ul>
+            <a class="link" href="https://docs.google.com/spreadsheets/d/11mlA7tgJW8dESTPdiOXfbzbbjVxu90ow/edit?usp=sharing" target="_blank" rel="noopener">Ver documento →</a>
+          </article>
+
+          <!-- Proyecto 4 -->
+          <article class="card">
+            <div class="card-top"><span class="badge">Sprint 6</span><span class="kind">Consola</span></div>
+            <h3>Análisis de logs con la consola</h3>
+            <p>Búsqueda de peticiones en registros de servidor Apache usando comandos de consola como <code>grep</code> para filtrar por dirección IP y fecha.</p>
+            <p class="metric"><b>Terminal</b> · logs HTTP</p>
+            <ul class="tags"><li>Línea de comandos</li><li>grep</li><li>HTTP</li></ul>
+            <a class="link" href="https://docs.google.com/document/d/1s5KazD0ko8KRXzInXQOFvweXhzsh_I8l/edit?usp=sharing" target="_blank" rel="noopener">Ver documento →</a>
+          </article>
+
+          <!-- Proyecto 5 -->
+          <article class="card">
+            <div class="card-top"><span class="badge">Final</span><span class="kind">Proyecto final QA</span></div>
+            <h3>Proyecto final de QA</h3>
+            <p>23 preguntas prácticas sobre diseño de pruebas, HTTP/HTTPS, cliente-servidor, pruebas móviles, JSON y consultas SQL (JOIN, GROUP BY, LIKE).</p>
+            <p class="metric"><b>23</b> respuestas · 4 tareas</p>
+            <ul class="tags"><li>Diseño de pruebas</li><li>SQL</li><li>HTTP</li><li>JSON</li></ul>
+            <a class="link" href="https://docs.google.com/spreadsheets/d/1lMPwEd6ZBNK_P4jy47MYgSOGsKts0usU/edit?usp=sharing" target="_blank" rel="noopener">Ver documento →</a>
+          </article>
+
+          <!-- PARA AGREGAR UN PROYECTO: copia una <article class="card"> completa y pega aquí -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HABILIDADES ============ -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Diseño de pruebas</h3>
+            <ul><li>Clases de equivalencia</li><li>Valores límite</li><li>Tablas de decisión</li><li>Listas de comprobación</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Gestión de errores</h3>
+            <ul><li>Jira</li><li>Informes de errores</li><li>Evidencias con capturas</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Técnicas</h3>
+            <ul><li>SQL</li><li>HTTP / HTTPS</li><li>JSON</li><li>Consola (grep)</li><li>Pruebas móviles</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section contact" id="contacto">
+      <div class="container narrow">
+        <h2>Hablemos</h2>
+        <p>¿Tienes una oportunidad o quieres revisar mis proyectos con más detalle?</p>
+        <div class="hero-actions">
+          <!-- CAMBIA: tu correo, tu GitHub y tu LinkedIn -->
+          <a class="btn btn-primary" href="mailto:tu-correo@ejemplo.com">Escríbeme</a>
+          <a class="btn btn-ghost" href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 Jorge Alberto Paez Vargas</div>
+  </footer>
+
+</body>
+</html>
